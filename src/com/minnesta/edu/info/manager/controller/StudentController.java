@@ -154,6 +154,7 @@ public class StudentController {
         //将学生信息封装为学生对象：用Student方法，创建学生对象
         Student stu = new Student();
         //用set方法，把数据放入
+        //开闭原则：对扩展内容开放，对修改内容关闭
         stu.setId(id);
         stu.setName(name);
         stu.setAge(age);
