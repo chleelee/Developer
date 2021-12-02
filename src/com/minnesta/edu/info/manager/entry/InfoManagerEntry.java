@@ -2,10 +2,10 @@ package com.minnesta.edu.info.manager.entry;
 
 import java.util.Scanner;
 
-import com.minnesta.edu.info.manager.controller.StudentController;
+import com.minnesta.edu.info.manager.controller.OtherStudentController;
 import com.minnesta.edu.info.manager.controller.TeacherController;
 
-public class InfoManagerEntry {
+public class infoManagerEntry {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (true) {
@@ -16,7 +16,7 @@ public class InfoManagerEntry {
         switch (i) {
             case 1:
                 //创建studentController对象，通过此对象.✘✘✘调用start方法
-                StudentController studentController = new StudentController();
+                OtherStudentController studentController = new OtherStudentController();
                 studentController.start();
                 break;
             case 2:  //删除System.out.println("老师管理");
